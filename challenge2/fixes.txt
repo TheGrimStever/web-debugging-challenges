@@ -1,0 +1,16 @@
+This one really stumped me.  This was the error I was getting:
+
+Error: Route.get() requires callback functions but got a [object Undefined]
+    at Route.(anonymous function) [as get] (/Users/stevenbaca/devMtn/toyprob/debugContest/web-debugging-challenges/challenge2/node_modules/express/lib/router/route.js:196:15)
+    at EventEmitter.app.(anonymous function) [as get] (/Users/stevenbaca/devMtn/toyprob/debugContest/web-debugging-challenges/challenge2/node_modules/express/lib/application.js:481:19)
+    at Object.<anonymous> (/Users/stevenbaca/devMtn/toyprob/debugContest/web-debugging-challenges/challenge2/server.js:20:5)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Function.Module.runMain (module.js:447:10)
+    at startup (node.js:142:18)
+    at node.js:939:3
+
+
+    

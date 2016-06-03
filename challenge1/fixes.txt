@@ -1,0 +1,20 @@
+Honestly, I thought I was faster at this.  These are the bugs I did find:
+
+The CDN that loaded Angular didn't have a closing Script tag.  I've done this
+alot before.  I noticed the color was wrong on my key tags
+
+productsCtrl.js, line 9. --  Debug console was not expecting a ')'.  Looking at
+the file, I started matching opening and closing parentheses and brackets, and
+found a missing closing bracket.
+
+
+When injecting UI Router into the angular app, in the brackets, it must be
+spelled 'ui.router', not 'ui-router'.  I've done this once before and was stuck
+on it for a long time.
+
+In app.js, the .state defining the settings, controller must be named the same
+as the module the instantiates it.  This bug had 'settingsctrl' instead of
+'settingsCtrl'.
+
+In productsCtrl.js, in looking over the code, I noticed that it was calling a
+method in productService, but it was not injected into the controller.
